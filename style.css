@@ -1,91 +1,124 @@
 @charset "UTF-8";
 
-
-:root{
-    --cor1: #829DDB;
-    --cor2: #4070DF;
-    --cor3: #0A41C1;
-    --cor4: #08308D;
+*{
+    margin: 0;
+    padding: 0;
 }
 
+:root{
+    --cor1: #96A4c2;
+    --cor2: #485C70;
+    --cor3: #2B4C6F;
+}
+
+
 body{
+    font-family:Arial, Helvetica, sans-serif;
     background-color: var(--cor1);
-    font-family: Arial, Helvetica, sans-serif;
-    min-height: 100hv;
+    width: 100vw;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+header{
+    background-color: var(--cor3);
+    text-align: center;
+    margin: auto;
+    color: white;
+    padding: 10px;
+    padding-left: 15px;
+    border-radius: 5px;
+    box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.485);
+}
+
+main{
+    width: 930px;
+    margin: auto;
+}
+
+section#dados{
+    background-color: var(--cor3);
+    color: white;
+    min-width: 290px;
+    max-width: 1000px;
+    width: 450px;
+    padding: 10px;
+    padding-left: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+    box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.485);
+}
+
+section#formacao{
+    background-color: var(--cor3);
+    color: white;
+    width: 450px;
+    min-width: 290px;
+    max-width: 1000px;
+    padding: 10px;
+    padding-left: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.485);
+    display: inline-block;
+
+}
+
+section#cursos{
+    background-color: white;
+    width: 450px;
+    min-width: 290px;
+    max-width: 1000px;
+    padding: 10px;
+    padding-left: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.485);
+    display: inline-block;
+}
+
+section#experiencia{
+    background-color: white;
+    width: 400px;
+    min-width: 290px;
+    max-width: 1000px;
+    padding: 10px;
+    padding-left: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    box-shadow: 3px 5px 4px rgba(0, 0, 0, 0, 0.485);
+    background-position: right top;
+}
+
+section > ul{
+    list-style-position: inside;
 }
 
 a{
-    border: 1px solid black;
-    color: black;
-    border-radius: 5px;
-    padding: 2px;
     text-decoration: none;
+    color: white;
+    border: 1px solid #96A4c2;
+    border-radius: 5px;
+    padding: 1px;
 }
 
 a:hover{
     text-decoration: underline;
     background-color: var(--cor1);
-}
-
-a.externo:after{
-    content: '\1F517';
-}
-
-header{
-    background-color: var(--cor4);
-    padding: 5px;
-    margin: auto;
     border-radius: 5px;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
-    color: white;
-    text-align: center;
+    padding: 2px
 }
 
-
-h2{
-    background-color: var(--cor2);
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-    padding-left: 15px;
-    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.3);
-}
-
-.esp {
-    position: sticky;
-    top: -1px;
-    background-color: white;
-}
-
-header > p{
-    padding-left: 15px;
-}
-
-main{
-    width: 800px;
-    background-color: white;
-    margin: auto;
-    border-radius: 5px;
-    padding-bottom: 10px;
-    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.3); 
-    text-align: justify;
-}
-
-main > div > p{
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-
-main > div > h3{
-    padding-left: 10px;
-}
 
 footer{
-    background-color: var(--cor4);
-    padding: 2px;
-    color: white;
     text-align: center;
+    margin: auto;
+    padding: 8px;
+    background-color: var(--cor3);
+    color: white;
     border-radius: 5px;
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3); 
+    box-shadow: 3px 5px 4px rgba(0, 0, 0, 0, 0.485);
 }
+
