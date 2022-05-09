@@ -26,70 +26,69 @@ header{
     margin: auto;
     color: white;
     padding: 10px;
-    padding-left: 15px;
     border-radius: 5px;
     box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.485);
 }
 
+header#especial{
+    position: sticky;
+    top: -1px;
+}
+
+header > h1 {
+    padding: 20px;
+}
+
+header > h2 {
+    padding: 10px;
+}
+
 main{
-    width: 930px;
     margin: auto;
+    min-width: 290px;
+    max-width: 1000px;
 }
 
 section#dados{
     background-color: var(--cor3);
     color: white;
-    min-width: 290px;
-    max-width: 1000px;
-    width: 450px;
     padding: 10px;
     padding-left: 15px;
     border-radius: 5px;
+    margin: auto;
     margin-top: 10px;
-    display: inline-block;
     box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.485);
 }
 
 section#formacao{
     background-color: var(--cor3);
     color: white;
-    width: 450px;
-    min-width: 290px;
-    max-width: 1000px;
     padding: 10px;
     padding-left: 15px;
+    margin: auto;
     margin-top: 10px;
     border-radius: 5px;
     box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.485);
-    display: inline-block;
-
 }
 
 section#cursos{
     background-color: white;
-    width: 450px;
-    min-width: 290px;
-    max-width: 1000px;
     padding: 10px;
     padding-left: 15px;
+    margin: auto;
     margin-top: 10px;
     border-radius: 5px;
     box-shadow: 3px 5px 4px rgba(0, 0, 0, 0.485);
-    display: inline-block;
 }
 
 section#experiencia{
     background-color: white;
-    width: 400px;
-    min-width: 290px;
-    max-width: 1000px;
     padding: 10px;
     padding-left: 15px;
+    margin: auto;
     margin-top: 10px;
     border-radius: 5px;
-    display: inline-block;
-    box-shadow: 3px 5px 4px rgba(0, 0, 0, 0, 0.485);
-    background-position: right top;
+    box-shadow: 3px 5px 4px rgba(0, 0, 0, 0, 0.485); 
 }
 
 section > ul{
@@ -121,4 +120,6 @@ footer{
     border-radius: 5px;
     box-shadow: 3px 5px 4px rgba(0, 0, 0, 0, 0.485);
 }
+
+
 
