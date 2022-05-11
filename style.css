@@ -110,6 +110,23 @@ a:hover{
     padding: 2px
 }
 
+article{
+    background-color: white;
+    margin: auto;
+    border-radius: 5px;
+    padding: 10px;
+    padding-top: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 20px solid var(--cor3);
+    padding-left: 15px;
+    padding-right: 15px;
+    text-indent: 1.5em;
+}
+
+article > p#link{
+    margin: auto;
+}
 
 footer{
     text-align: center;

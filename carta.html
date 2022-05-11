@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Carta de Apresentação</title>
+</head>
+<body onload="carregar()">
+    <main>
+        <header id="especial">
+            <h1>Marcel Moura da Luz Melo</h1>
+            
+            <h2>Objetivo</h2>
+            <p><strong>Estagiar na área de desenvolvimento</strong></p>
+            
+            <h2>Contato</h2>
+            <p><img src="imagens/email-p.png" alt="Email"> - <strong>E-mail: <a href="mailto: marceldaluzmelo@hotmail.com" target="_blank" class="externo">marceldaluzmelo@hotmail.com</a></strong></p>
+            <p><img src="imagens/telefone-p.png" alt="Telefone"> - <strong>Telefone: <a href="https://api.whatsapp.com/send/?phone=5511964475758&text&app_absent=0" target="_blank" class="externo">(11)9 6447-5758</a></strong></p>
+            <p><img src="imagens/telefone-p.png" alt="Telefone Recados"> - <strong>Recados: <a href="https://api.whatsapp.com/send/?phone=5511948227956&text&app_absent=0" target="_blank" class="externo">(11)9 4822-7956</a></strong></p>
+            <p><img src="imagens/link-p.png" alt="Links"> - <strong>Links: <a href="https://github.com/MMouraLMelo" target="_blank" class="externo">GitHub</a> / <a href="https://www.linkedin.com/in/mmouramelo/" target="_blank" class="externo">Linkedin</a></strong></p>    
+        </header>
+        <section>
+            <article>
+                <div id="saudacao"></div>
+                <p>Meu nome é Marcel Moura da Luz Melo, tenho 34 anos, sou casado, tenho uma filha e resido na cidade de Santa Isabel, SP. Sou formado Técnico em Logística pela ETEC Santa Isabel e no momento estou buscando minha graduação em Análise e Desenvolvimento de Sistemas pela Anhanguera. Consegui alguns certificados já, mas tenho outros para adquirir ainda, que até o momento não foi possível porque não posso pagar. Minhas experiências anteriores foram na área de logística, porém, atualmente venho tentando ingressar na área da tecnologia da informação como estagiário para adquirir as experiências e conhecimentos necessários que me tornarão um profissional completo.</p>
+                <p>Estou muito interessado na vaga porque é justamente o que venho buscando como objetivo que seria estagiar na área de desenvolvimento. Não somente por isso, acredito que a empresa seja ideal por ser um ambiente acolhedor, que inclui todos, por ser um ambiente que vai nos desafiar e ao mesmo tempo ensinar, porque acredito que uma pessoa só vai saber do seu potencial sendo desafiada, o investimento que faz para que o funcionário seja cada vez melhor e qualificado para assim suprir as necessidades da organização.</p>
+                <p>Acredito que minhas experiências anteriores me tornaram uma pessoa capaz de participar do processo seletivo, porque aprendi a trabalhar em equipe, a ser organizado, a ter autoconfiança, se eu não souber fazer vou aprender de uma forma ou de outra, seja perguntando a pessoas mais experientes ou até mesmo pesquisando, não sou uma pessoa que vai ficar sentado esperando, vou correr atrás. Atualmente, enquanto estou buscando oportunidade, venho tentando criar meus projetos em casa mesmo, para poder fixar o conhecimento e ao mesmo tempo me desafiar.</p>
+                <p>Estou totalmente a disposição para podermos conversar pessoalmente ou via plataformas, para isso, estou deixando alguns contatos como email, marceldaluzmelo@hotmail.com e telefones (11) 96447-5758 (Whatsapp e Telegram), (11) 94822-7956 - Recados (Whatsapp).</p>
+                <p style="text-align: right;">Atenciosamente,</p>
+                <p style="text-align: right;">Marcel Moura da Luz Melo.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p></p><a href="index.html">Voltar</a> | <a href="documentos/carta-de-apresentação.pdf" download="">Download da Carta de Apresentação.</a></p>
+    </footer>
+    <script>
+        function carregar(){
+            var saudacao = window.document.getElementById('saudacao')
+            var data = new Date()
+            var hora = data.getHours()
+            if (hora >= 0 && hora < 12){
+                saudacao.innerHTML = `<strong>Bom dia Recrutador (a),</strong>`
+            } else if (hora >= 12 && hora <= 18){
+                saudacao.innerHtml = `<strong>Boa Tarde Recrutador (a),</strong>`
+            } else {
+                saudacao.innerHTML = `<strong>Boa noite Recrutador (a),</strong>`
+            }
+        }
+    </script>
+</body>
+</html>
