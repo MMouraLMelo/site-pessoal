@@ -39,15 +39,16 @@
     </footer>
     <script>
         function carregar(){
+            var nome = window.prompt('Olá Recrutador (a)! Como devo chama-lo?')
             var saudacao = window.document.getElementById('saudacao')
             var data = new Date()
             var hora = data.getHours()
             if (hora >= 0 && hora < 12){
-                saudacao.innerHTML = `<strong>Bom dia Recrutador (a),</strong>`
+                saudacao.innerHTML = `<strong>Bom dia ${nome},</strong>`
             } else if (hora >= 12 && hora <= 18){
-                saudacao.innerHtml = `<strong>Boa Tarde Recrutador (a),</strong>`
+                saudacao.innerHTML = `<strong>Boa tarde ${nome},</strong>`
             } else {
-                saudacao.innerHTML = `<strong>Boa noite Recrutador (a),</strong>`
+                saudacao.innerHTML = `<strong>Boa noite ${nome},</strong>`
             }
         }
     </script>
